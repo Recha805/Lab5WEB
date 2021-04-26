@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validasi JavaScript</title>
+    <script type="text/javascript">
+        function Validasi() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var alamat = document.getElementById("alamat").value;
+            if (nama != "" && email != "" && alamat != "") {
+                return true;
+            }else{
+                alert('isi form pendaftaran dengan lengkap!');
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Form Pendaftaran</h1>
+                        <form action="#" method="POST" onsubmit="validasi()">
+                            <div>
+                                <label>Nama lengkap:</label>
+                                <input type="text" name="nama" id="nama" />
+                            </div>
+                            <div>
+                                <label>Email:</label>
+                                <input type="email" name="email" id="email" />
+                            </div>   
+                            <div>
+                                <label>Alamat:</label>
+                                <textarea cols="30" rows="10" name="alamat" id="alamat"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Daftar" class="tombol">
+                            </div>
+                        </form>
+    </body>
+</html>
